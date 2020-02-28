@@ -1,0 +1,17 @@
+variable_argPossede = entrer valeur
+variable_PUproduit = entrer valeur
+variable_TotBonbon = 0
+
+DEBUT
+SI variable_argPossede > 0  ET variable_PUproduit > 0
+TANT QUE  variable_argPossede >=  variable_PUproduit  
+variable_argPossede =  variable_argPossede  - variable_PUproduit
+	variable_TotBonbon = variable_TotBonbon + 1
+FIN TANT QUE
+IMPRIMER « VOUS AVEZ » + variable_TotBonbon + « BONBONS »
+
+SINON
+variable_TotBonbon = 0	
+IMPRIMER «VOUS N’AVEZ PAS D’ARGENT »
+FIN SI
+FIN
